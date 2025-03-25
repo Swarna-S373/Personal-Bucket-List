@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lilita+One&display=swap');
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #333;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: linear-gradient(to bottom right, #00C9FF, #92FE9D);
+    color: crimson;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Cedarville+Cursive';
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+main {
+    padding: 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+li {
+    line-height: 2;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #444;
+}
+
+li:hover {
+    background-color: azure;
+    color: coral;
+    transform: scale(1.05);
+}
+
+li input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+}
+
+li .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #e6b668;
+    color: #bc5a5a;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h4, h5 {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    li {
+        font-size: 1.1em;
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    li {
+        font-size: 1.3em;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        max-width: 900px;
+        padding: 50px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    li {
+        font-size: 1.4em;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1000px;
+        padding: 60px;
+    }
+
+    header h1 {
+        font-size: 3.5em;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+
+    footer {
+        padding: 25px 0;
+    }
+}
